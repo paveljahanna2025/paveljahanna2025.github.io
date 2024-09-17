@@ -25,7 +25,8 @@ p {line-height: 2}
 <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
   <div class="w3-display-middle w3-text-white w3-center">
     <h1 class="w3-jumbo">Hanna & Pavel</h1>
-    <h2>Are getting married</h2>
+    <h2 hidden class="wedding-multilanguage-text">Are getting married</h2>
+    <h2 class="wedding-multilanguage-text">Ovat menossa naimisiin</h2>
     <h2><b>01.02.2025</b></h2>
   </div>
 </header>
@@ -33,10 +34,11 @@ p {line-height: 2}
 <!-- Navbar (sticky bottom) -->
 <div class="w3-bottom w3-hide-small">
   <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
-    <a href="#us" style="width:25%" class="w3-bar-item w3-button">Hanna & Pavel</a>
-    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Wedding</a>
-    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+    <a href="#home" style="width:20%" class="w3-bar-item w3-button">Home</a>
+    <a href="#us" style="width:20%" class="w3-bar-item w3-button">Hanna & Pavel</a>
+    <a href="#wedding" style="width:20%" class="w3-bar-item w3-button">Wedding</a>
+    <a href="#rsvp" style="width:20%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+    <a onclick="for (let element of document.getElementsByClassName('wedding-multilanguage-text')){element.hidden = !element.hidden;}" style="width:20%" class="w3-bar-item w3-button">🇫🇮🇬🇧</a>
   </div>
 </div>
 
@@ -56,8 +58,10 @@ p {line-height: 2}
 <!-- Background photo -->
 <div class="w3-display-container bgimg2">
   <div class="w3-display-middle w3-text-white w3-center">
-    <h1 class="w3-jumbo">You Are Invited</h1><br>
-    <h2>Of course..</h2>
+    <h1 hidden class="w3-jumbo wedding-multilanguage-text">You Are Invited</h1><br>
+    <h1 class="w3-jumbo wedding-multilanguage-text">Kutsumme sinut</h1><br>
+    <h2 hidden class="wedding-multilanguage-text">Of course..</h2>
+    <h2 class="wedding-multilanguage-text">juhlanviettoon</h2>
   </div>
 </div>
 
@@ -86,7 +90,45 @@ p {line-height: 2}
   <h1>HOPE YOU CAN MAKE IT!</h1>
   <p class="w3-large">Kindly Respond By January, 2024</p>
   <p class="w3-xlarge">
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+    <!--button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button-->
+    <div hidden class="w3-container w3-white w3-center wedding-multilanguage-text" style="margin:auto;width:50%;padding:32px;max-width:600px">
+      <h1 class="w3-wide">CAN YOU COME?</h1>
+      <p>We really hope you can make it.</p>
+      <form action="https://formspree.io/f/mzbnadwy" method="POST">
+        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+        <input class="w3-input w3-border" type="text" placeholder="Food restrictions" name="food">
+        <input class="w3-input w3-border" type="text" placeholder="Will you arrive by car? How many cars?" name="cars">
+        <p><i>Sincerely, Hanna & Pavel</i></p>
+        <div class="w3-row">
+          <div class="w3-half">
+            <!--button type="submit" class="w3-button w3-block w3-green">Going</button-->
+            <button type="button" class="w3-button w3-block w3-green">Going</button>
+          </div>
+          <div class="w3-half">
+            <button type="button" class="w3-button w3-block w3-red">Can't come</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="w3-container w3-white w3-center wedding-multilanguage-text" style="margin:auto;width:50%;padding:32px;max-width:600px">
+      <h1 class="w3-wide">Pääsetkö häihin?</h1>
+      <p>Olisi ihanaa nähdä teidät juhlissamme.</p>
+      <form action="https://formspree.io/f/mzbnadwy" method="POST">
+        <input class="w3-input w3-border" type="text" placeholder="Nimi/Nimet" name="name">
+        <input class="w3-input w3-border" type="text" placeholder="Ruokailurajoitukset" name="food">
+        <input class="w3-input w3-border" type="text" placeholder="Saavutteko autolla? Monella?" name="cars">
+        <p><i>Terveisin, Hanna & Pavel</i></p>
+        <div class="w3-row">
+          <div class="w3-half">
+            <!--button type="submit" class="w3-button w3-block w3-green">Going</button-->
+            <button type="button" class="w3-button w3-block w3-green">Tulossa</button>
+          </div>
+          <div class="w3-half">
+            <button type="button" class="w3-button w3-block w3-red">En pääse</button>
+          </div>
+        </div>
+      </form>
+    </div>
   </p>
 </div>
 
