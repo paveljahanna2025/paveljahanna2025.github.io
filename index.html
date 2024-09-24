@@ -182,7 +182,7 @@ p {line-height: 2}
         Our special day commences with the wedding ceremony at St. John's Church at 1 pm. The ceremony will last until approximately 1:30 pm.
         When the ceremony is over, you will receive bubble wands, with which you can accomodate us with bubbles as we exit the church.
         <br>
-        If you arrive by car, we suggest you park in the <a href="https://www.aimopark.fi/kaupungit/helsinki/iso-erottaja/">Erottaja Aimo Park</a>,
+        If you arrive by car, we suggest you park in the <a href="https://www.aimopark.fi/en/cities/helsinki/iso-erottaja/">Erottaja Aimo Park</a>,
         from which you only have a short walk to the church. You can alternatively
         also parallel park in the street near the church, if you find a spot. If you prefer public transport,
         the tram line 10 will take you directly to the church from Helsinki city center.
@@ -201,7 +201,7 @@ p {line-height: 2}
         <br>
         Åminne manor is reserved for us until 2:00 am. There aren't too many accomodation possibilities around the Åminne manor, so for our guests
         that are not local to the Helsinki region, we recommend you to book a hotel at Helsinki city center, or
-        <a href="https://www.glohotels.fi/hotellit/glo-sello">Glo Hotel Sello</a> in Leppävaara.
+        <a href="https://www.glohotels.fi/en/hotels/glo-sello">Glo Hotel Sello</a> in Leppävaara.
         <br>
         If needed, you are free to leave your car in front of Åminne manor and pick it up the next day. Please note that the parking
         in front of Åminne manor is outside, and the temperatures may be freezing.
@@ -284,43 +284,63 @@ p {line-height: 2}
 <div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
   <h1 hidden class="wedding-multilanguage-text">HOPE YOU CAN MAKE IT!</h1>
   <h1 class="wedding-multilanguage-text">TOIVOTTAVASTI PÄÄSETTE!</h1>
-  <p hidden class="w3-large wedding-multilanguage-text">Kindly Respond By December, 2024</p>
-  <p class="w3-large wedding-multilanguage-text">Pyydämme että vastaatte Joulukuuhun 2024 mennessä</p>
+  <p hidden class="w3-large wedding-multilanguage-text">Kindly Respond Before December, 2024</p>
+  <p class="w3-large wedding-multilanguage-text">Pyydämme että vastaatte ennen Joulukuuta 2024</p>
   <p class="w3-xlarge">
     <!--button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button-->
     <div hidden class="w3-container w3-white w3-center wedding-multilanguage-text" style="margin:auto;padding:32px;max-width:600px">
-      <h1 class="w3-wide">CAN YOU COME?</h1>
+      <h1 class="w3-wide">Can you come?</h1>
       <form action="https://formspree.io/f/mzbnadwy" method="POST">
-        <input class="w3-input w3-border" type="text" placeholder="Name" name="name">
-        <input class="w3-input w3-border" type="text" placeholder="Food restrictions" name="food">
-        <input class="w3-input w3-border" type="text" placeholder="Will you arrive by car? How many cars?" name="cars">
-        <p><i>Sincerely, Hanna & Pavel</i></p>
+        <input class="w3-input w3-border" type="text" placeholder="Name" name="name" required>
+        <input class="w3-input w3-border" type="text" placeholder="Contact info (phone num, email, other)" name="contact" required>
+        <br>
         <div class="w3-row">
           <div class="w3-half">
-            <!--button type="submit" class="w3-button w3-block w3-green">Going</button-->
-            <button type="button" class="w3-button w3-block w3-green">Going</button>
+          <input class="w3-input w3-border" type="radio" id="yes" name="attendance" value="yes" required><label for="yes">Going</label>
           </div>
           <div class="w3-half">
-            <button type="button" class="w3-button w3-block w3-red">Can't come</button>
+          <input class="w3-input w3-border" type="radio" id="no" name="attendance" value="no"><label for="no">Can't come</label>
           </div>
+        </div>
+        <br>
+        <input class="w3-input w3-border" type="text" placeholder="Food restrictions (allergies, diet)" name="food">
+        <input class="w3-input w3-border" type="text" placeholder="Coming by car? Are there free seats?" name="cars">
+        <br>
+        <input class="w3-input w3-border" type="checkbox" id="speech" name="speech"><label for="speech">I'd like to have a speech</label>
+        <br>
+        <input class="w3-input w3-border" type="text" placeholder="Additional information, greetings" name="extra">
+        <p><i>Sincerely, Hanna & Pavel</i></p>
+        <div class="w3-row">
+          <button type="submit" class="w3-button w3-block w3-green">Submit</button>
+          <!--button type="button" class="w3-button w3-block w3-green">Lähetä</button-->
         </div>
       </form>
     </div>
     <div class="w3-container w3-white w3-center wedding-multilanguage-text" style="margin:auto;padding:32px;max-width:600px">
       <h1 class="w3-wide">Pääsetkö häihin?</h1>
       <form action="https://formspree.io/f/mzbnadwy" method="POST">
-        <input class="w3-input w3-border" type="text" placeholder="Nimi" name="name">
-        <input class="w3-input w3-border" type="text" placeholder="Ruokailurajoitukset" name="food">
-        <input class="w3-input w3-border" type="text" placeholder="Saavutteko autolla? Monella?" name="cars">
-        <p><i>Terveisin, Hanna & Pavel</i></p>
+        <input class="w3-input w3-border" type="text" placeholder="Nimi" name="name" required>
+        <input class="w3-input w3-border" type="text" placeholder="Yhteystiedot (puh nro, sposti, muu)" name="contact" required>
+        <br>
         <div class="w3-row">
           <div class="w3-half">
-            <!--button type="submit" class="w3-button w3-block w3-green">Going</button-->
-            <button type="button" class="w3-button w3-block w3-green">Tulossa</button>
+          <input class="w3-input w3-border" type="radio" id="yes" name="attendance" value="yes" required><label for="yes">Tulossa</label>
           </div>
           <div class="w3-half">
-            <button type="button" class="w3-button w3-block w3-red">En pääse</button>
+          <input class="w3-input w3-border" type="radio" id="no" name="attendance" value="no"><label for="no">En pääse</label>
           </div>
+        </div>
+        <br>
+        <input class="w3-input w3-border" type="text" placeholder="Ruokailurajoitukset (allergiat, ruokavalio)" name="food">
+        <input class="w3-input w3-border" type="text" placeholder="Saavutteko autolla? Onko vapaata tilaa?" name="cars">
+        <br>
+        <input class="w3-input w3-border" type="checkbox" id="speech" name="speech"><label for="speech">Haluaisin pitää puheen</label>
+        <br>
+        <input class="w3-input w3-border" type="text" placeholder="Lisätietoja, terveisiä" name="extra">
+        <p><i>Terveisin, Hanna & Pavel</i></p>
+        <div class="w3-row">
+          <button type="submit" class="w3-button w3-block w3-green">Lähetä</button>
+          <!--button type="button" class="w3-button w3-block w3-green">Lähetä</button-->
         </div>
       </form>
     </div>
