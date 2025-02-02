@@ -73,6 +73,10 @@ p {line-height: 2}
     <!--h2 hidden class="wedding-multilanguage-text">Are getting married</h2-->
     <!--h2 class="wedding-multilanguage-text">Ovat menossa naimisiin</h2-->
     <h2><b>01.02.2025</b></h2>
+    <h2>
+      <b class="wedding-multilanguage-text">Sydämelliset kiitokset juhlaväelle!</b>
+      <b hidden class="wedding-multilanguage-text">Thank you to all the guests for sharing this special day with us!</b>
+    </h2>
   </div>
 </header>
 
@@ -91,20 +95,10 @@ p {line-height: 2}
   <div class="w3-content">
     <p>
       <u hidden class="wedding-multilanguage-text">
-        Update 19.1.2025: Please arrive to church on time, for example 15 minutes before 1 pm. If you have trouble throughout the wedding day,
-        don't hesitate to contact groom's bestman Santeri: 040 734 0600
+        Pictures of the wedding are coming very soon!
       </u>
       <u class="wedding-multilanguage-text">
-        Päivitys 19.1.2025: Saavuthan ajoissa kirkkoon, esimerkiksi jo varttia ennen klo 13:00. Ongelmatilanteissa hääpäivänä ole yhteydessä
-        sulhasen bestmaniin Santeriin: 040 734 0600
-      </u>
-    </p>
-    <p>
-      <u hidden class="wedding-multilanguage-text">
-        Update 28.11.2024: There will be bus transportation from church to wedding reception at 1:30 pm that you can use if you wish.
-      </u>
-      <u class="wedding-multilanguage-text">
-        Päivitys 28.11.2024: Tilasimme bussikyydin kirkosta juhlapaikalle klo 13:30, joihin vieraat voivat halutessaan mennä kyytiin.
+        Kuvat häistä tulossa hyvin pian!
       </u>
     </p>
   </div>
@@ -300,79 +294,6 @@ p {line-height: 2}
 </div>
 
 <!-- RSVP section -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
-  <h1 hidden class="wedding-multilanguage-text">HOPE YOU CAN MAKE IT!</h1>
-  <h1 class="wedding-multilanguage-text">TOIVOTTAVASTI NÄEMME!</h1>
-  <p hidden class="w3-large wedding-multilanguage-text">Kindly Respond By December 1st, 2024</p>
-  <p class="w3-large wedding-multilanguage-text">Vastausta pyydetään 1.12.2024 mennessä</p>
-  <p class="w3-xlarge">
-    <!--button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button-->
-    <div hidden class="w3-container w3-white w3-center wedding-multilanguage-text" style="margin:auto;padding:32px;max-width:600px">
-      <h1 class="w3-wide">Can you come?</h1>
-      <form action="https://formspree.io/f/mzbnadwy" method="POST">
-        <input class="w3-input w3-border" type="text" placeholder="Name" name="name" required>
-        <input class="w3-input w3-border" type="text" placeholder="Contact info (phone num, email, other)" name="contact" required>
-        <br>
-        <div class="w3-row">
-          <div class="w3-half">
-          <input class="w3-input w3-border" type="radio" id="yes" name="attendance" value="yes" required><label for="yes">Going</label>
-          </div>
-          <div class="w3-half">
-          <input class="w3-input w3-border" type="radio" id="no" name="attendance" value="no"><label for="no">Can't come</label>
-          </div>
-        </div>
-        <br>
-        <input class="w3-input w3-border" type="text" placeholder="Food restrictions (allergies, diet)" name="food">
-        <br>
-        <input class="w3-input w3-border" type="checkbox" id="alcoholfree" name="alcoholfree"><label for="alcoholfree">I won't partake in alcohol</label>
-        <br>
-        <input class="w3-input w3-border" type="text" placeholder="Coming by car? Are there free seats?" name="cars">
-        <br>
-        <input class="w3-input w3-border" type="checkbox" id="speech" name="speech"><label for="speech">I'd like to give a speech</label>
-        <br>
-        <p>If you want to leave this unchecked but give a surprise speech, that's fine too</p>
-        <input class="w3-input w3-border" type="text" placeholder="Additional information, greetings" name="extra">
-        <p><i>Sincerely, Hanna & Pavel</i></p>
-        <div class="w3-row">
-          <button type="submit" class="w3-button w3-block w3-green">Submit</button>
-          <!--button type="button" class="w3-button w3-block w3-green">Lähetä</button-->
-        </div>
-      </form>
-    </div>
-    <div class="w3-container w3-white w3-center wedding-multilanguage-text" style="margin:auto;padding:32px;max-width:600px">
-      <h1 class="w3-wide">Pääsetkö häihin?</h1>
-      <form action="https://formspree.io/f/mzbnadwy" method="POST">
-        <input class="w3-input w3-border" type="text" placeholder="Nimi" name="name" required>
-        <input class="w3-input w3-border" type="text" placeholder="Yhteystiedot (puh nro, sposti, muu)" name="contact" required>
-        <br>
-        <div class="w3-row">
-          <div class="w3-half">
-          <input class="w3-input w3-border" type="radio" id="yes" name="attendance" value="yes" required><label for="yes">Tulossa</label>
-          </div>
-          <div class="w3-half">
-          <input class="w3-input w3-border" type="radio" id="no" name="attendance" value="no"><label for="no">En pääse</label>
-          </div>
-        </div>
-        <br>
-        <input class="w3-input w3-border" type="text" placeholder="Ruokailurajoitukset (allergiat, ruokavalio)" name="food">
-        <br>
-        <input class="w3-input w3-border" type="checkbox" id="alcoholfree" name="alcoholfree"><label for="alcoholfree">Juhlin alkoholittomana</label>
-        <br>
-        <input class="w3-input w3-border" type="text" placeholder="Saavutteko autolla? Onko vapaata tilaa?" name="cars">
-        <br>
-        <input class="w3-input w3-border" type="checkbox" id="speech" name="speech"><label for="speech">Haluaisin pitää puheen</label>
-        <br>
-        <p>Hääpäivän ohjelmassa on tilaa myös yllätyspuheille</p>
-        <input class="w3-input w3-border" type="text" placeholder="Lisätietoja, terveisiä" name="extra">
-        <p><i>Terveisin, Hanna & Pavel</i></p>
-        <div class="w3-row">
-          <button type="submit" class="w3-button w3-block w3-green">Lähetä</button>
-          <!--button type="button" class="w3-button w3-block w3-green">Lähetä</button-->
-        </div>
-      </form>
-    </div>
-  </p>
-</div>
 
 <!-- RSVP modal -->
 <!--div id="id01" class="w3-modal">
